@@ -1,0 +1,111 @@
+body{
+background-color:yellow;
+    -webkit-animation: background 7s infinite alternate;
+    -ms-animation: background 7s infinite alternate;
+}
+#nav{
+    background: red;
+    background: -webkit-radial-gradient(greenyellow,orangered);
+    background: -o-radial-gradient(greenyellow,orangered);
+    background: -moz-radial-gradient(greenyellow,orangered);
+    background: radial-gradient(greenyellow,orangered);
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+#logo{
+    color: aliceblue;
+    font-family: Pacifico;
+    font-size:32px;
+}
+#img{
+    height: 100%;
+    width: 56%;
+    position:relative;
+    background-image: url("/images/beautiful.jpg");
+    padding-top: 40%;
+    padding-right:50%;
+    padding-left: 50%;
+}
+@-webkit-keyframes background {
+    from {
+        background-color: yellow;
+    }
+    to {
+        background-color: greenyellow;
+    }
+    to {
+        background-color: #ff661a;
+    }
+    to {
+        background-color: #99ffff;
+    }
+}
+@-ms-keyframes background {
+    from {
+        background-color: yellow;
+    }
+    to {
+        background-color: greenyellow;
+    }
+    to{
+        background-color:#ff661a;
+    }
+    to{
+        background-color: #99ffff;
+    }
+}
+#box{
+    margin-right: 4%;
+    margin-left: 4%;
+    background-color: ghostwhite;
+}
+.navbr{
+    border-left: solid black 1px;
+    font-family: Pacifico;
+}
+.navbr:hover{
+    background-color:white;
+}
+.textboxs{
+    display:inline-block;
+    width:65%;
+    height: 45%;
+    position:relative;
+    padding-top: 5%;
+}
+.animation{
+    -webkit-animation:movement 3s infinite alternate;
+    -ms-animation:movement 3s infinite alternate;
+    position:relative;
+}
+@-webkit-keyframes movement{
+    0%   {left: 0px;}
+    25%  {left: 25%;}
+    75%  {left: 75%;}
+    100% {left: 100%;}
+}
+@-ms-keyframes movement{
+    0%   {left: 0px;}
+    25%  {left: 25%;}
+    75%  {left: 75%;}
+    100% {left: 100%;}}
+
+@media all and (max-width: 660px) {
+    #img {
+        background-image: url("/images/abstraction.jpg");
+    }
+}
+footer{
+    color:white;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top:1%;
+    background-color:cornflowerblue;
+    text-align: center;
+    background: blue;
+    background: -webkit-radial-gradient(deepskyblue,darkseagreen);
+    background: -o-radial-gradient(deepskyblue,darkseagreen);
+    background: -moz-radial-gradient(deepskyblue,darkseagreen);
+    background: radial-gradient(deepskyblue,darkseagreen);
+}
